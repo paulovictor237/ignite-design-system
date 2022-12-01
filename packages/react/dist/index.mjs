@@ -17,5 +17,11 @@ var colors = {
   test: "#fff"
 };
 
-// src/index.ts
-console.log("\u{1F680} ~ file: index.ts:2 ~ colors", colors);
+// src/index.tsx
+import { jsx } from "react/jsx-runtime";
+var App = () => {
+  return /* @__PURE__ */ jsx("h1", { style: { color: colors.ignite300 }, children: "hello World" });
+};
+export {
+  App
+};
